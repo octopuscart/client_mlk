@@ -155,7 +155,7 @@
                                                     <li><a href="#">Jacket</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Our Client </a></li>
+                                            <li><a href="<?php echo site_url('Pages/clients');?>">Our Clients </a></li>
                                             <li><a href="<?php echo site_url('Pages/contactus');?>">Contact Us</a></li>
                                         </ul>
                                     </div>

@@ -27,5 +27,11 @@ class Pages extends CI_Controller {
         $data[] = array();
         $this->load->view('Pages/contactus', $data);
     }
+    
+    
+    public function clients() {
+        $data[] = array();
+        $this->load->view('Pages/clients', $data);
+    }
 
 }

@@ -3,9 +3,9 @@ $this->load->view('layout/header');
 ?>
 
 <!--banner-->
-<div class="banner1" style='background: url("<?php echo base_url(); ?>/assets/theme/images/bcontact.jpg");background-size: cover;'>
+<div class="banner1" style='background: url("<?php echo base_url(); ?>assets/theme/images/bcontact.jpg");background-size: cover;'>
     <div class="container">
-        <h3><a href="index.html">Home</a> / <span>Contact Us</span></h3>
+        <h3><a href="/">Home</a> / <span>Contact Us</span></h3>
     </div>
 </div>
 <!--banner-->
