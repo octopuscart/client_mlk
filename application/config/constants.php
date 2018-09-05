@@ -3,14 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $baselink = 'http://'.$_SERVER['SERVER_NAME'];
 
-$baselinkmain = strpos($baselink, '192.168') ? $baselink.'/classApartStoreAdmin/' : 'http://manage.classapartstore.com/';
+$baselinkmain = strpos($baselink, '192.168') ? $baselink.'/johnsperfectfashionsadmin/' : 'http://manage.johnsperfectfashions.com/';
+
 define('imageserver', $baselinkmain."assets_main/productimages/");
 
 define('imageserverslider', $baselinkmain."assets_main/sliderimages/");
 
 define('imageservermain', $baselinkmain."assets_main/");
 
-define('globle_currency', 'Rs.');
+define('globle_currency', 'HKD');
 
 /*
 |--------------------------------------------------------------------------

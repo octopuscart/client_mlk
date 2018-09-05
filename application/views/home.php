@@ -1,199 +1,293 @@
 <?php
 $this->load->view('layout/header');
 ?>
-<!-- Slider Area Start Here -->
-<div class="main-slider2">
-    <div class="bend niceties preview-1">
-        <div id="ensign-nivoslider-3" class="slides">
-            <?php
-            foreach ($sliders as $key => $value) {
-                ?>
-                <img src="<?php echo imageserverslider.$value->file_name; ?>" alt="" title="#slider-direction-<?php echo $key;?>" />
-                <?php
-            }
-            ?>        
-        </div>
 
 
-        <?php
-        foreach ($sliders as $key => $value) {
-            ?>
-            <div id="slider-direction-<?php echo $key;?>" class="t-cn slider-direction">
-                <div class="slider-content t-lfl s-tb slider-1">
-                    <div class="title-container s-tb-c">
-                        <h2 class="title<?php echo $key;?>" style="color:<?php echo $value->title_color;?>">
-                            <?php echo $value->title;?>
-                        </h2>
-                        <p style="color:<?php echo $value->line1_color;?>"><?php echo $value->line1;?></p>
-                        <p style="color:<?php echo $value->line2_color;?>"><?php echo $value->line2;?></p>
-                        <a href="<?php echo $value->link;?>" class="btn-shop-now-fill-slider"><?php echo $value->link_text;?></a>
+<!--slider part-->
+<div class="banner-w3">
+    <div class="demo-1">            
+        <div id="example1" class="core-slider core-slider__carousel example_1">
+            <div class="core-slider_viewport">
+                <div class="core-slider_list">
+                    <div class="core-slider_item">
+                        <img src="<?php echo base_url(); ?>assets/theme/slider/4.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="core-slider_item">
+                        <img src="<?php echo base_url(); ?>assets/theme/slider/2.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="core-slider_item">
+                        <img src="<?php echo base_url(); ?>assets/theme/slider/3.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="core-slider_item">
+                        <img src="<?php echo base_url(); ?>assets/theme/slider/5.jpg" class="img-responsive" alt="">
                     </div>
                 </div>
             </div>
-            <?php
-        }
-        ?>
-
-    </div>
-</div>
-<!-- Slider Area End Here -->
-
-<!-- Featured Products Area End Here -->
-<div class="featured-products-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2 class="title-carousel">Featured Products</h2>
+            <div class="core-slider_nav">
+                <div class="core-slider_arrow core-slider_arrow__right"></div>
+                <div class="core-slider_arrow core-slider_arrow__left"></div>
             </div>
+            <div class="core-slider_control-nav"></div>
         </div>
-        <div class="metro-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="true" data-autoplay-timeout="10000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="3" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="3" data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="4" data-r-large-nav="true" data-r-large-dots="false">
-            <?php
-            foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
-                ?>
-                <div class="product-box1">
-                    <ul class="product-social">
-                        <li><a href="#" ng-click="addToCart(<?php echo $value['id']; ?>, 1)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                    </ul>
-                    <div class="product-img-holder">
-                        <?php if ($value['sale_price'] > 0) { ?>
-                            <div class="hot-sale">
-                                <span>Sale</span>
+    </div>
+    <link href="<?php echo base_url(); ?>assets/theme/css/coreSlider.css" rel="stylesheet" type="text/css">
+    <script src="<?php echo base_url(); ?>assets/theme/js/coreSlider.js"></script>
+    <script>
+        $('#example1').coreSlider({
+            pauseOnHover: false,
+            interval: 3000,
+            controlNavEnabled: true
+        });</script>
+
+</div>	
+<!--end of slider part-->
+
+
+
+<!--content-->
+<div class="content">
+
+
+    <!--custome block-->
+    <div class="latest-w3">
+        <div class="container">
+            <h3 class="tittle1">Customize Now</h3>
+            <div class="latest-grids">
+                <div class="col-md-3 latest-grid">
+                    <div class="latest-top">
+                        <img  src="<?php echo base_url(); ?>assets/theme/images/suitb.jpg" class="img-responsive"  alt="">
+                        <div class="latest-text">
+                            <h4>Suits</h4>
+                        </div>
+                        <div class="latest-text2 hvr-sweep-to-top">
+                            <h4 style="    font-size: 12px;">From<br/> HK$ 1700.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 latest-grid">
+                    <div class="latest-top">
+                        <img  src="<?php echo base_url(); ?>assets/theme/images/shirts.jpg" class="img-responsive"  alt="">
+                        <div class="latest-text">
+                            <h4>Shirt</h4>
+                        </div>
+                        <div class="latest-text2 hvr-sweep-to-top">
+                            <h4 style="    font-size: 12px;">From<br/> HK$ 220.00</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 latest-grid">
+                    <div class="latest-top">
+                        <img  src="<?php echo base_url(); ?>assets/theme/images/suita.jpg" class="img-responsive"  alt="">
+                        <div class="latest-text">
+                            <h4>Jacket</h4>
+                        </div>
+                        <div class="latest-text2 hvr-sweep-to-top">
+                            <h4 style="    font-size: 12px;">From<br/> HK$ 1200.00</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 latest-grid">
+                    <div class="latest-top">
+                        <img  src="<?php echo base_url(); ?>assets/theme/images/pant.jpg" class="img-responsive"  alt="">
+                        <div class="latest-text">
+                            <h4>Pant</h4>
+                        </div>
+                        <div class="latest-text2 hvr-sweep-to-top">
+                            <h4 style="    font-size: 12px;">From<br/> HK$ 500.00</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+    <!--end of custom block-->
+    <hr/>
+
+
+
+    <!--new-arrivals-->
+    <div class="new-arrivals-w3agile">
+        <div class="container">
+            <h2 class="tittle">New Arrivals in Suits</h2>
+            <div class="arrivals-grids">
+                <?php for ($i = 1; $i < 5; $i++) { ?>
+
+                    <div class="col-md-3 arrival-grid simpleCart_shelfItem">
+                        <div class="grid-arr">
+                            <div  class="grid-arrival">
+                                <figure>		
+                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal12">
+                                        <div class="grid-img">
+                                            <img  src="<?php echo base_url(); ?>assets/theme/dummyfab/suit/<?php echo $i; ?>.png" class="img-responsive" alt="">
+                                        </div>
+                                        <!--                                    <div class="grid-img">
+                                                                                <img  src="<?php echo base_url(); ?>assets/theme/images/p5.jpg" class="img-responsive"  alt="">
+                                                                            </div>			-->
+                                    </a>		
+                                </figure>	
                             </div>
-                            <?php
-                        }
-                        ?>
-                        <a href="#">
-                            <div class="product_image_back" style="background: url(<?php echo imageserver . $value['file_name']; ?>);height: 224px"></div>
-                            <!--<img src="img/product/15.jpg" alt="product">-->
-                        </a>
+                            <div class="man">
+                                <h6><a href="#">Super 110s Wool </a></h6>
+                                <span class="size"><?php echo "JPFSU00" . $i ?></span>
+                                <p ><em class="item_price">HK$ 1700</em></p>
+                                <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-content-holder">
-                        <h3><a href="#"><?php echo $value['title']; ?></a></h3>
-                        <span>{{<?php echo $value['price']; ?>|currency:"<?php echo globle_currency; ?> "}}</span>
-                    </div>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</div>
-<!-- Featured Products Area End Here -->
-<!-- Offer Area 1 Start Here -->
-<div class="offer-area1 hidden-after-desk" style="background: url(<?php echo base_url(); ?>assets/theme2/img/mid_slide.jpg)">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="brand-area-box-l">
-                    <span>Get the Most Classy</span>
-                    <h1>HOME DECOR </h1>
-                    <p>Check it out now! </p>
-                    <a href="#" class="btn-shop-now-fill">Shop Now</a>
-                </div>
-            </div>
-            <div id="countdown" style="    margin-left: 75px;"></div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="brand-area-box-r">
-<!--                    <a href="#"><img src="<?php echo base_url(); ?>assets/theme2/img/mid_slide.jpg" alt="offer"></a>-->
-                </div>
+
+                <?php } ?>
+
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
-</div>
-<!-- Offer Area 1 End Here -->
-<!-- Product Area Start Here -->
-<div class="product-area padding-top-0-after-desk">
-    <div class="container" id="home-isotope">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="isotop-classes-tab myisotop1">
+    <!--new-arrivals-->
+    <hr/>
 
-                    <a href="#" data-filter=".popular">Popular</a>
+    <!--accessories-->
+    <div class="accessories-w3l">
+        <div class="container">
+            <h3 class="tittle">ORIGINAL ITALIAN FABRICS</h3>
+            <span style="font-size: 35px;">The best men's suits are tailored from the best cloth.</span>
+            <div class="button">
+                <a href="#" class="button1"> Shop Now</a>
+                <a href="#" class="button1"> Quick View</a>
+            </div>
+        </div>
+    </div>
+    <!--accessories-->
+
+
+    <!--Products-->
+    <div class="product-agile">
+        <div class="container">
+            <h3 class="tittle1"> New Fabrics In Shirts</h3>
+            <div class="slider">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider">
+                        <li>	 
+                            <div class="caption">
+                                <?php for ($i = 1; $i < 5; $i++) { ?>
+                                    <div class="col-md-3 cap-left simpleCart_shelfItem">
+                                        <div class="grid-arr">
+                                            <div  class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#">
+                                                        <div class="grid-img">
+                                                            <img  src="<?php echo base_url(); ?>assets/theme/dummyfab/shirt/<?php echo $i; ?>.png" class="img-responsive" alt="">
+                                                        </div>
+
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="women">
+                                                <h6><a href="single.html">2 Ply 100% Cotton </a></h6>
+                                                <span class="size"><?php echo "JPFSH00" . $i ?> </span>
+                                                <p ><em class="item_price">$220.00</em></p>
+                                                <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="row featuredContainer">
+    </div>
 
+    <?php
+    $clients = ["1DerrickWilliams.jpg", "2PrinceAkim.jpg", "3RapperGotti.jpg", "5.jpg", "6.jpg", "7.jpg", "14.jpg", "17.jpg"];
 
-            <?php
-            foreach ($product_home_slider_bottom['home_bottom'] as $key => $value) {
+    $clientsa = ["a.jpg", "b.jpg", "c.jpg", "d.jpg"];
+    ?>
+</div>
+<!--content-->
+<hr/>
+
+<!--clients area-->
+<div class="latest-w3">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/GridGallery/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/GridGallery/css/component.css" />
+
+    <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/modernizr.custom.js"></script>
+    <h3 class="tittle1"> Our Clients</h3>
+    <div id="grid-gallery" class="grid-gallery" style="    margin-top: 2em;">
+        <section class="grid-wrap">
+            <ul class="grid">
+                <li class="grid-sizer"></li><!-- for Masonry column width -->
+
+                <?php foreach ($clients as $key => $value) {
+                    ?>
+                    <li>
+                        <div class="panel panel-default" style="border:none;margin: 0px">
+                            <div class="panel-body" style="    padding: 5px;">
+                                <div class="thumbnail" style="border:none; padding: 0px;   margin-bottom: 0px;">
+                                    <img src="<?php echo base_url(); ?>assets/theme/clients/<?php echo $value; ?>" alt="img01" style=""/>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <?php
+                }
                 ?>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 on-sale">
-                    <div class="product-box1">
-                        <ul class="product-social">
-                            <li><a href="#" ng-click="addToCart(<?php echo $value['id']; ?>, 1)"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <div class="product-img-holder">
-                            <a href="#">
-                                <div class="product_image_back product_image_back_grid" style="background: url(<?php echo imageserver . $value['file_name']; ?>);"></div>
-                                <!--<img src="img/product/3.jpg" alt="product">-->
-                            </a>
+
+
+            </ul>
+            <div style="clear:both"></div>
+        </section><!-- // grid-wrap -->
+        <section class="slideshow" >
+            <ul>
+
+                <?php foreach ($clients as $key => $value) {
+                    ?>
+                    <li>
+                        <div class="panel panel-default" style="background: none;border:none;">
+                            <div class="panel-body" style="">
+                                <div class="thumbnail" style="background: none;border:none">
+                                    <img src="<?php echo base_url(); ?>assets/theme/clients/<?php echo $value; ?>" alt="img01"  style="    height: 600px;
+                                         margin-top: -40px;"/>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-content-holder">
-                            <h3><a href="<?php echo site_url("Product/ProductDetails/" . $value['id']); ?>"><?php echo $value['title']; ?></a></h3>
-                            <span><span>{{<?php echo $value['sale_price']; ?>|currency:"<?php echo globle_currency; ?> "}}</span>{{<?php echo $value['price']; ?>|currency:"<?php echo globle_currency; ?> "}}</span>
-                        </div>
-                    </div>
-                </div>
-                <?php
-            }
-            ?>
+                    </li>
+                    <?php
+                }
+                ?>
 
-        </div>
-    </div>
+            </ul>
+
+            <nav>
+                <span class="icon nav-prev"></span>
+                <span class="icon nav-next"></span>
+                <span class="icon nav-close"></span>
+            </nav>
+
+        </section><!-- // slideshow -->
+    </div><!-- // grid-gallery -->
+
+
+    <!-- // grid-gallery -->
+    <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/imagesloaded.pkgd.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/masonry.pkgd.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/classie.js"></script>
+    <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/cbpGridGallery.js"></script>
+    <script>
+        new CBPGridGallery(document.getElementById('grid-gallery'));
+    </script>
 </div>
-<!-- Product Area End Here -->
-
-<!-- Advantage Area Start Here -->
-<div class="advantage3-area">
-    <div class="container">
-        <div class="row">
-            
-            
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="advantage-area-box">
-                    <div class="advantage-area-box-icon">
-                        <a href="#"><i class="flaticon-truck"></i></a>
-                    </div>
-                    <div class="advantage-area-box-content">
-                        <h3>FREE SHIPPING</h3>
-                        <p>On All Orders!</p>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="advantage-area-box">
-                    <div class="advantage-area-box-icon">
-                        <a href="#"><i class="flaticon-headphones"></i></a>
-                    </div>
-                    <div class="advantage-area-box-content">
-                        <h3>REACH OUT TO US</h3>
-                        <p>Have Problems? Call Us Directly!</p>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="advantage-area-box">
-                    <div class="advantage-area-box-icon">
-                        <a href="#"><i class="flaticon-necklace"></i></a>
-                    </div>
-                    <div class="advantage-area-box-content">
-                        <h3>EXCLUSIVE PRODUCTS</h3>
-                        <p>Get Products From An Exclusive Range!</p>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-</div>
-<!-- Advantage Area End Here -->
-
+<!--end of client area-->
 <?php
 $this->load->view('layout/footer');
 ?>

@@ -101,7 +101,7 @@ body{
     margin-left: 2em;
 }
 .logo-nav-left1 ul li a{
-	font-size:.95em;
+	font-size:1.15em;
     color: #fff;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -559,12 +559,12 @@ h2.tittle {
     color: #1565C0;
 }
 .new-arrivals-w3agile {
-    padding: 5em 0;
+    padding: 2em 0;
     background: #F9F8F8;
 	text-align:center;
 }
 .arrivals-grids {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .grid-arr {
     border: 1px solid #E2E2E2;
@@ -783,7 +783,7 @@ a.my-cart-b {
 }
 .accessories-w3l {
     text-align: center;
-    background: url(../images/ban1.jpg) no-repeat 0px 0px;
+    background: url(../images/midsec.jpg) no-repeat 0px 0px;
 	min-height: 534px;
 	background-size:cover;
 	padding: 10em 0;
@@ -890,7 +890,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   right: 15%;
 }
 .product-agile {
-    padding: 5em 0;
+    padding: 2em 0;
 }
 h3.tittle1 {
     text-align: center;
@@ -898,14 +898,14 @@ h3.tittle1 {
     color: #1565C0;
 }
 .caption {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .latest-w3 {
-    padding: 5em 0;
+    padding: 2em 0;
 	background: #F7F7F7;
 }
 .latest-grids {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .latest-top {
     position: relative;
