@@ -3236,7 +3236,7 @@ h3.tittle1, h3.tittle {
 }
 @media(max-width:384px){
 	.navbar-header.nav_2 {
-		float: right;
+		/*float: right;*/
 	}
 	.navbar-toggle {
 		margin-right: 0px;	

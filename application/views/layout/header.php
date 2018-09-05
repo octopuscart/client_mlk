@@ -122,7 +122,7 @@
                                         <img src="<?php echo base_url(); ?>/assets/images/logo1.png" style="    height: 80px;">
                                     </a></h1>
                             </div>
-                            <div class="logo-nav-left1">
+                            <div class="logo-nav-left12">
                                 <nav class="navbar navbar-default">
                                     <!-- Brand and toggle get grouped for better mobile display -->
                                     <div class="navbar-header nav_2">
