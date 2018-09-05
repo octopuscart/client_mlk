@@ -14,7 +14,7 @@ $this->load->view('layout/header');
    
     ?>
 <!--banner-->
-<div class="banner1" style='background: url("<?php echo base_url(); ?>assets/theme/images/clients.jpg") no-repeat 0px -84px;background-size: cover;'>
+<div class="banner1" style='background: url("<?php echo base_url(); ?>assets/theme/images/clients.jpg") ;background-size: cover;'>
     <div class="container" >
         <h3 style="color: black"><a href="/" style="color: black">Home</a> / <span style="color: black">Our Clients</span></h3>
     </div>
