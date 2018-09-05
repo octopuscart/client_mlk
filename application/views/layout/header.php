@@ -156,7 +156,7 @@
                                                 </ul>
                                             </li>
                                             <li><a href="#">Our Client </a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="<?php echo site_url('Pages/contactus');?>">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </nav>
