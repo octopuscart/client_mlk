@@ -14,7 +14,7 @@ $this->load->view('layout/header');
     <!--contact-->
     <div class="mail-w3ls">
         <div class="container">
-            <h2 class="tittle">Contact Us</h2>
+          
             <div class="mail-grids">
                 <div class="mail-top">
                     <div class="col-md-4 mail-grid">

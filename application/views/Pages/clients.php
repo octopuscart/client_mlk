@@ -3,14 +3,20 @@ $this->load->view('layout/header');
 ?>
 
 <?php
-    $clients = ["1DerrickWilliams.jpg", "2PrinceAkim.jpg", "3RapperGotti.jpg", "5.jpg", "6.jpg", "7.jpg", "14.jpg", "17.jpg"];
+    $clients = ["1DerrickWilliams.jpg", "2PrinceAkim.jpg", "3RapperGotti.jpg", "5.jpg", "6.jpg", "31RapperGotti.jpg",
+        "7.jpg", "8.jpg", "9.jpg",
+        "10.jpg", "11.jpg", "12.jpg",
+        "13.jpg", "14.jpg", "15.jpg",
+        "16.jpg", "18.jpg", "19.jpg",
+        "21.jpg", "22.jpg",  "31.jpg", 
+        ];
 
-    $clientsa = ["a.jpg", "b.jpg", "c.jpg", "d.jpg"];
+   
     ?>
 <!--banner-->
 <div class="banner1" style='background: url("<?php echo base_url(); ?>assets/theme/images/clients.jpg") no-repeat 0px -84px;background-size: cover;'>
-    <div class="container">
-        <h3><a href="/">Home</a> / <span>Our Clients</span></h3>
+    <div class="container" >
+        <h3 style="color: black"><a href="/" style="color: black">Home</a> / <span style="color: black">Our Clients</span></h3>
     </div>
 </div>
 <!--banner-->
@@ -23,7 +29,7 @@ $this->load->view('layout/header');
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/GridGallery/css/component.css" />
 
         <script src="<?php echo base_url(); ?>assets/theme/GridGallery/js/modernizr.custom.js"></script>
-        <h3 class="tittle1"> Our Clients</h3>
+    
         <div id="grid-gallery" class="grid-gallery" style="    margin-top: 2em;">
             <section class="grid-wrap">
                 <ul class="grid">
