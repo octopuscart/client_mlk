@@ -52,7 +52,7 @@
 <div class="copy-section">
     <div class="container">
         <div class="copy-left">
-            <p>&copy; <?php echo date('Y')?> <a href="http://w3layouts.com">John's Perfect Fashion</a>. All rights reserved </p>
+            <p>&copy; <?php echo date('Y')?> <a href="http://www.johnsperfectfashion.com/">John's Perfect Fashion</a>. All rights reserved </p>
         </div>
         <div class="copy-right">
             <img src="images/card.png" alt=""/>
