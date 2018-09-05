@@ -1,6 +1,1 @@
-<Files *>
-order Deny,Allow
-Deny from all
-Allow from env=internal
-</Files>
 
