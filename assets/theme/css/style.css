@@ -3239,6 +3239,11 @@ li.bt-nn h6 {
     .logo-nav-left{
         width: 100%;
     }
+    
+    .mobile_menu{
+            width: 100%;
+    margin-left: 50%;
+    }
 
     .centerimage{    height: 80px;
                      margin: auto;

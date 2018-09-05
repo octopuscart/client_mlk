@@ -133,7 +133,7 @@
                                             <span class="icon-bar"></span>
                                         </button>
                                     </div> 
-                                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                                    <div class="collapse navbar-collapse mobile_menu" id="bs-megadropdown-tabs">
                                         <ul class="nav navbar-nav">
                                             <li class="active"><a href="/" class="act">Home</a></li>	
                                             <!-- Mega Menu -->
