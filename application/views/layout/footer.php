@@ -52,7 +52,7 @@
 <div class="copy-section">
     <div class="container">
         <div class="copy-left">
-            <p>&copy; <?php echo date('Y')?> <a href="http://www.johnsperfectfashion.com/">John's Perfect Fashion</a>. All rights reserved </p>
+            <p>&copy; <?php echo date('Y') ?> <a href="http://www.johnsperfectfashion.com/">John's Perfect Fashion</a>. All rights reserved </p>
         </div>
         <div class="copy-right">
             <img src="images/card.png" alt=""/>
@@ -323,4 +323,12 @@
 </div>
 </div>
 </body>
+<!-- type ahead-->
+<script src="<?php echo base_url(); ?>assets/search/handlebars.js" type="text/javascript"></script>
+
+<!-- type ahead-->
+<script src="<?php echo base_url(); ?>assets/search/typeahead.bundle.js" type="text/javascript"></script>
+<!--angular controllers-->
+<script src="<?php echo base_url(); ?>assets/theme/angular/shopController.js"></script>
+
 </html>

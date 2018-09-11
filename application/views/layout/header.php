@@ -18,6 +18,8 @@
         <!-- Favicon -->
         <link href="<?php echo base_url(); ?>assets/theme/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="<?php echo base_url(); ?>assets/theme/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/theme/css/jquery-ui.css">
+
         <link href="<?php echo base_url(); ?>assets/theme/css/font-awesome.css" rel="stylesheet">
 
         <link href="<?php echo base_url(); ?>assets/theme/css/customstyle.css" rel="stylesheet" type="text/css" media="all" />
@@ -26,12 +28,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/custom_style.css">
 
 
-        <!--sweet alert-->
-        <script src="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.js"></script>
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.css">
-
-        <!--angular js-->
-        <script src="<?php echo base_url(); ?>assets/theme/angular/angular.min.js"></script>
+      
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -40,24 +37,22 @@
             <![endif]-->
 
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <script src="<?php echo base_url(); ?>assets/theme/js/jquery.min.js"></script>
+        <script charset="UTF8" src="<?php echo base_url(); ?>assets/theme/js/jquery.min.js"></script>
         <link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
         <!--search jQuery-->
         <script src="<?php echo base_url(); ?>assets/theme/js/main.js"></script>
         <!--search jQuery-->
         <script src="<?php echo base_url(); ?>assets/theme/js/responsiveslides.min.js"></script>
-        <script>
-            $(function () {
-                $("#slider").responsiveSlides({
-                    auto: true,
-                    nav: true,
-                    speed: 500,
-                    namespace: "callbacks",
-                    pager: true,
-                });
-            });
-        </script>
+        
+        
+          <!--sweet alert-->
+        <script src="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.css">
+
+        <!--angular js-->
+        <script src="<?php echo base_url(); ?>assets/theme/angular/angular.min.js"></script>
+        
         <!--mycart-->
         <script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/bootstrap-3.1.1.min.js"></script>
         <!-- cart -->
@@ -93,8 +88,19 @@
 
     </head>
 
-    <body ng-app="ClassApartStore">
+    <body ng-app="App">
         <div ng-controller="ShopController">
+            <script>
+                var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
+                //$interpolateProvider.startSymbol('{$');
+                //$interpolateProvider.endSymbol('$}');
+                $httpProvider.defaults.headers.common = {};
+                        $httpProvider.defaults.headers.post = {};
+                });
+                        var baseurl = "<?php echo base_url(); ?>index.php/";
+                        var imageurlg = "<?php echo imageserver; ?>";
+                        var globlecurrency = "<?php echo globle_currency;?>";
+                        var avaiblecredits = 0;</script>
             <!--header-->
             <div class="header">
                 <div class="header-top">
@@ -140,37 +146,37 @@
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Now<b class="caret"></b></a>
                                                 <ul class="dropdown-menu   singlemenu">
-                                                    <li><a href="#">Shirt</a></li>
-                                                    <li><a href="#">Pant</a></li>
-                                                    <li><a href="#">Suit</a></li>
-                                                    <li><a href="#">Jacket</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirt</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suit</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jacket</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pant</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogue <b class="caret"></b></a>
                                                 <ul class="dropdown-menu   singlemenu">
-                                                    <li><a href="#">Shirt</a></li>
-                                                    <li><a href="#">Pant</a></li>
-                                                    <li><a href="#">Suit</a></li>
-                                                    <li><a href="#">Jacket</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirt</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suit</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jacket</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pant</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="<?php echo site_url('Pages/clients');?>">Our Clients </a></li>
-                                            <li><a href="<?php echo site_url('Pages/contactus');?>">Contact Us</a></li>
+                                            <li><a href="<?php echo site_url('Pages/clients'); ?>">Our Clients </a></li>
+                                            <li><a href="<?php echo site_url('Pages/contactus'); ?>">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </nav>
                             </div>
 
                             <div class="header-right2">
-                                <div class="cart box_1">
-                                    <a href="checkout.html">
+                                <div class="cart box_1" style="    margin-top: 10px;">
+                                    <a href="<?php echo site_url("Cart/details"); ?>">
                                         <h3> <div class="total">
-                                                <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-                                            <img src="images/bag.png" alt="" />
+                                                <span class="simpleCart_total1">{{globleCartData.total_price|currency:"<?php echo globle_currency;?> "}}</span> (<span  class="simpleCart_quantity1">{{globleCartData.total_quantity}}</span> items)</div>
+                                            <img src="<?php echo base_url(); ?>assets/theme/images/bag.png" alt="" />
                                         </h3>
                                     </a>
-                                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+                                    <!--<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>-->
                                     <div class="clearfix"> </div>
                                 </div>	
                             </div>

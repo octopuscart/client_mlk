@@ -21,12 +21,32 @@ class Api extends REST_Controller {
     function cartOperation_post() {
         $product_id = $this->post('product_id');
         $quantity = $this->post('quantity');
+        $custome_id = $this->post('custome_id');
 
         if ($this->checklogin) {
-            $session_cart = $this->Product_model->cartOperation($product_id, $quantity, $this->user_id);
+            $session_cart = $this->Product_model->cartOperation($product_id, $quantity, $custome_id, $this->user_id);
             $session_cart = $this->Product_model->cartData($this->user_id);
         } else {
-            $session_cart = $this->Product_model->cartOperation($product_id, $quantity);
+            $session_cart = $this->Product_model->cartOperation($product_id, $quantity, $custome_id);
+            $session_cart = $this->Product_model->cartData();
+        }
+
+        $this->response($session_cart['products'][$product_id]);
+    }
+
+    //function for product list
+    function cartOperationCustom_post() {
+        $product_id = $this->post('product_id');
+        $quantity = $this->post('quantity');
+        $custome_id = $this->post('custome_id');
+        $customekey = $this->post('customekey');
+        $customevalue = $this->post('customevalue');
+
+        if ($this->checklogin) {
+            $session_cart = $this->Product_model->cartOperationCustom($product_id, $quantity, $custome_id, $customekey, $customevalue, $this->user_id);
+            $session_cart = $this->Product_model->cartData($this->user_id);
+        } else {
+            $session_cart = $this->Product_model->cartOperationCustom($product_id, $quantity, $custome_id, $customekey, $customevalue);
             $session_cart = $this->Product_model->cartData();
         }
 
@@ -259,7 +279,7 @@ class Api extends REST_Controller {
         $categoriesString = $this->Product_model->stringCategories($category_id) . ", " . $category_id;
         $categoriesString = ltrim($categoriesString, ", ");
 
-         $product_query = "
+        $product_query = "
                        
     select * from(
     (select pt.id as product_id, pt.* from products as pt where keywords like '%$searchtext%') 

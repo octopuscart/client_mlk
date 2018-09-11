@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $baselink = 'http://'.$_SERVER['SERVER_NAME'];
 
-$baselinkmain = strpos($baselink, '192.168') ? $baselink.'/johnsperfectfashionsadmin/' : 'http://manage.johnsperfectfashions.com/';
+$baselinkmain = strpos($baselink, '192.168') ? $baselink.'/master_admin_panel/' : 'http://manage.johnsperfectfashions.com/';
 
 define('imageserver', $baselinkmain."assets_main/productimages/");
 
@@ -11,7 +11,12 @@ define('imageserverslider', $baselinkmain."assets_main/sliderimages/");
 
 define('imageservermain', $baselinkmain."assets_main/");
 
-define('globle_currency', 'HKD');
+define('globle_currency', 'HKD ');
+
+define('globle_currency_type', 'HKD ');
+
+define('custome_image_server', "http://costcointernational.com/bespoketailorshk_files");
+
 
 /*
 |--------------------------------------------------------------------------

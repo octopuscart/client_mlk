@@ -2,6 +2,17 @@
 $this->load->view('layout/header');
 ?>
 
+<script>
+            $(function () {
+                $("#slider").responsiveSlides({
+                    auto: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    pager: true,
+                });
+            });
+        </script>
 
 <!--slider part-->
 <div class="banner-w3">

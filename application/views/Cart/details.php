@@ -3,26 +3,19 @@ $this->load->view('layout/header');
 ?>
 
 <!-- Inner Page Banner Area Start Here -->
-<div class="inner-page-banner-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="breadcrumb-area">
-                    <h1>Cart Page</h1>
-                    <ul>
-                        <li><a href="#">Home</a> /</li>
-                        <li>Cart</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="bannerproduct" style='background: url("<?php echo base_url(); ?>assets/theme/images/b3.jpg") ;background-size: cover;'>
+			<div class="container">
+				<h3> My Cart</h3>
+			</div>
+		</div>
 <!-- Inner Page Banner Area End Here -->
 <!-- Cart Page Area Start Here -->
-<div class="cart-page-area">
+
+<div class="cart-page-area cart-items">.
+
     <div class="container" ng-if="globleCartData.total_quantity">
         <div class="row">
+            <h2 style="padding: 0px 15px; ">My Shopping Bag <b style="font-family: sans-serif">({{globleCartData.total_quantity}})</b></h2>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="cart-page-top table-responsive">
                     <table class="table table-hover">
@@ -44,7 +37,12 @@ $this->load->view('layout/header');
                                     </a>
                                 </td>
                                 <td>
-                                    <h3><a href="#">{{product.title}}</a><br/><small style="font-size: 10px">Vendor Code:{{product.vendor_id}}</small></h3>
+                                    <h3>
+                                        <a href="#">{{product.title}}</a>
+                                        <br/>
+                                        <span style="font-size: 15px">Item:{{product.item_name}}</span>
+                                    </h3>
+                                    <button type="button" ng-click="viewStyle(product)" class="btn btn-primary"  style="margin-top: 10px;">View Design</a>
                                 </td>
                                 <td class="amount">{{product.price|currency:" "}}</td>
                                 <td class="quantity">
@@ -90,7 +88,7 @@ $this->load->view('layout/header');
             </div>
         </div>
     </div>
-    
+  
     <!-- Content -->
 <div id="content"  ng-if="!globleCartData.total_quantity"> 
     <!-- Tesm Text -->
