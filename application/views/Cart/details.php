@@ -77,12 +77,14 @@ $this->load->view('layout/header');
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="cart-page-bottom-right">
                     
-                    <h3>Total<span>{{globleCartData.total_price|currency:" "}}</span></h3>
+                    <h3>Total<span>{{globleCartData.total_price|currency:"<?php echo globle_currency;?>  "}}</span></h3>
 
                     <div class="proceed-button">
 
-                        <a href=" <?php echo site_url("Cart/checkout"); ?>" class="btn-apply-coupon disabled" >Proceed</a>
-                        <p>..and we'll get back to you</p>
+                        <a href="<?php echo site_url("Cart/checkoutInit"); ?>" class="btn btn-info"> 
+            <i class="icon-check fs_large d_inline_b m_right_10"></i>
+            Checkout Now <i class="fa fa-arrow-right"></i>
+        </a>
                     </div>
                 </div>
             </div>

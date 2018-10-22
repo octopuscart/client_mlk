@@ -307,3 +307,113 @@ thead td.cart-form-heading {
 .custome_summary_popup table {
     width: 100%;
 }
+
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    border-color: #0d59af;
+    background: #0d59af;
+    color: #fff;
+}
+
+.panel-default > .panel-heading1 {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    border-color: #0d59af;
+    background: #0d59af;
+    color: #fff;
+}
+
+.panel-heading1 {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.process_block{
+    line-height: 37px;
+    float: right;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #0d59af;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+        background: #0d59af;
+    color: #fff !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background: #0d59af;
+     color: #fff !important; 
+}
+
+.product-details-tab-area{
+    padding:  20px;
+}
+
+.fr_value {
+    font-size: 12px;
+    margin-top: -7px;
+    float: left;
+    color: #000;
+}
+
+.measurement_text {
+    float: left;
+    font-size: 20px;
+    color: #000;
+}
+
+.button_type_1 {
+    background: #1565c0;
+    /* color: #000!important; */
+    border: 1px solid #fffefe;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.modal-dialog.modal-md {
+    width: 400px;
+}
+
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 6px;
+    border-bottom: 1px solid #FFFFFF;
+    background: #0d59af;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius:  5px;
+}
+
+.modal-dialog .table td, 
+.modal-dialog .table>tbody>tr>td,
+.modal-dialog .table>tbody>tr>th, 
+.modal-dialog .table>tfoot>tr>td, 
+.modal-dialog .table>tfoot>tr>th, 
+.modal-dialog .table>thead>tr>td, 
+.modal-dialog .table>thead>tr>th {
+    padding: 5px!important;
+}
+
+.panel-default {
+    border-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.panel-default {
+    border-color: #ddd;
+    margin-bottom: 10px;
+}

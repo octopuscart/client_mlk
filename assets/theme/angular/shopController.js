@@ -2,7 +2,12 @@
  Shop Cart product controllers
  */
 App.controller('ShopController', function ($scope, $http, $timeout, $interval, $filter) {
-
+    
+    $timeout(function(){
+        lazyload();
+    }, 1500)
+    
+     lazyload();
 
     var searchProducts = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
@@ -77,7 +82,7 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
     $scope.getCartData();
     //remove cart data
     $scope.removeCart = function (product_id) {
-        $http.delete(globlecart + "/" + product_id).then(function (rdata) {
+        $http.get(globlecart+"Delete" + "/" + product_id).then(function (rdata) {
             console.log("asdfsadf");
             $scope.getCartData();
         }, function (r) {
@@ -101,7 +106,7 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
             }
         }
         console.log(productobj.quantity)
-        $http.put(globlecart + "/" + productobj.product_id + "/" + productobj.quantity).then(function (rdata) {
+        $http.get(globlecart+"Put" + "/" + productobj.product_id + "/" + productobj.quantity).then(function (rdata) {
             $scope.getCartData();
         }, function (r) {
         })
@@ -189,7 +194,7 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
         $timeout(function () {
             equalHeight(); // Call Equal height function
 
-            $('nav#dropdown').meanmenu({siteLogo: "<a href='/' class='logo-mobile-menu'><img src='img/logo.png' /></a>"});
+//            $('nav#dropdown').meanmenu({siteLogo: "<a href='/' class='logo-mobile-menu'><img src='"+baseurl +"../assets/images/logo73.png' /></a>"});
             var wHeight = $(window).height();
             var mLogoH = $('a.logo-mobile-menu').outerHeight();
             wHeight = wHeight - 50;
@@ -198,7 +203,7 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
                 var mhref = '<a href="#" class="meanmenu-reveal cartopen" style="right: 40px;left: auto;text-align: center;text-indent: 0px;font-size: 18px;"><i class="fa fa-shopping-cart"></i><b class="cartquantity">' + $scope.globleCartData.total_quantity + '</b></a>';
                 $(".logo-mobile-menu").after(mhref);
                 var mhref = '<a href="#" class="meanmenu-reveal search_open" style="right: 70px;left: auto;text-align: center;text-indent: 0px;font-size: 18px;"><i class="fa fa-search"></i></a>';
-                $(".logo-mobile-menu").after(mhref);
+//                $(".logo-mobile-menu").after(mhref);
                 $(".cartopen").click(function () {
                     $('#mobileModel').modal('show')
                 })
@@ -227,10 +232,11 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
     }, function (e) {
     })
 
-    $scope.projectDetailsModel = {'productobj': {}, 'quantity': 1};
+    $scope.projectDetailsModel = {'productobj': {}, 'quantity': 1, "link": ""};
     //get product detail model
-    $scope.viewShortDetails = function (detailobj) {
+    $scope.viewShortDetails = function (detailobj, link) {
         $scope.projectDetailsModel.productobj = detailobj;
+        $scope.projectDetailsModel.link = link;
     }
 
 
@@ -255,7 +261,7 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
         customhtmlarray = customhtmlarray.join("");
         var customdiv = "<div class='custome_summary_popup'><table>" + customhtmlarray + "</table></div>";
         swal({
-            title: product.title+" - "+product.item_name,
+            title: product.title + " - " + product.item_name,
             html: customdiv,
         })
     }

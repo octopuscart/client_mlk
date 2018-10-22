@@ -44,7 +44,7 @@
         <script src="<?php echo base_url(); ?>assets/theme/js/main.js"></script>
         <!--search jQuery-->
         <script src="<?php echo base_url(); ?>assets/theme/js/responsiveslides.min.js"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
         
           <!--sweet alert-->
         <script src="<?php echo base_url(); ?>assets/theme/sweetalert2/sweetalert2.min.js"></script>
@@ -61,6 +61,13 @@
         <!--start-rate-->
         <script src="<?php echo base_url(); ?>assets/theme/js/jstarbox.js"></script>
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+       
+                <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.css">
+        <script src="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.js" type="text/javascript"></script>
+
+
+        
+        
         <script type="text/javascript">
             jQuery(function () {
                 jQuery('.starbox').each(function () {
@@ -161,8 +168,8 @@
                                                     <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pant</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="<?php echo site_url('Pages/clients'); ?>">Our Clients </a></li>
-                                            <li><a href="<?php echo site_url('Pages/contactus'); ?>">Contact Us</a></li>
+                                            <li><a href="<?php echo site_url('Shop/clients'); ?>">Our Clients </a></li>
+                                            <li><a href="<?php echo site_url('Shop/contactus'); ?>">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </nav>

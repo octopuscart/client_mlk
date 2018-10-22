@@ -160,7 +160,7 @@ $this->load->view('layout/header');
                         </div>
                     </div>
                     <!--======= ITEM DETAILS =========-->
-                    <div class="col-sm-7 col-xs-12">
+                    <div class="col-sm-7 col-xs-12 ">
                         <!--shirt customization-->
                         <div class="row" style="margin-top:10px;">
                             <?php
@@ -172,25 +172,9 @@ $this->load->view('layout/header');
 
                 <div class="row customization_order_block">
 
-                    <div class="col-md-8 col-xs-3">
-                        <button class="btn btn-inverse pull-left" style="padding: 10px 5px;
-                                margin-top: 10px;" ng-click="pullUp()"><i class="fa fa-arrow-up"></i></button>
-                    </div>
-                    <div class="col-md-2 col-xs-5">
-                        <div class="total_price_block">
-                            <h5> {{screencustom.productobj.price|currency:"<?php echo globle_currency_type; ?>"}}</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-xs-4">
-                        <button class="btn btn-inverse pull-right" ng-click="addToCartCustome()" style="padding: 10px 5px;
-                                margin-top: 10px;">
-                            Add To Cart  <i class="fa fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-
-
-
+                     <?php
+                    $this->load->view('Product/custom_bottom');
+                    ?>
 
                 </div>
 
@@ -205,6 +189,8 @@ $this->load->view('layout/header');
 
 <script>
     var product_id = <?php echo $productdetails['id']; ?>;
+    var defaut_view = "<?php echo $custom_item; ?>";
+    var gcustome_id = <?php echo $custom_id; ?>;
 
 </script>
 <!--angular controllers-->
