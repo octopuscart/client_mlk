@@ -31,15 +31,15 @@ class Shop extends CI_Controller {
     }
 
     public function contactus() {
-        $this->load->view('pages/contactus');
+        $this->load->view('Pages/contactus');
     }
 
     public function aboutus() {
-        $this->load->view('pages/aboutus');
+        $this->load->view('Pages/aboutus');
     }
 
     public function clients() {
-        $this->load->view('pages/clients');
+        $this->load->view('Pages/clients');
     }
 
 
