@@ -160,15 +160,10 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogue <b class="caret"></b></a>
-                                                <ul class="dropdown-menu   singlemenu">
-                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirts</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suits</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jackets</a></li>
-                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pants</a></li>
-                                                </ul>
+                                                <a href="#" >Catalogue</a>
+                                               
                                             </li>
-                                            <li><a href="<?php echo site_url('Shop/clients'); ?>">Our Clients </a></li>
+                                            <li><a href="<?php echo site_url('Shop/aboutus'); ?>">About Us </a></li>
                                             <li><a href="<?php echo site_url('Shop/contactus'); ?>">Contact Us</a></li>
                                         </ul>
                                     </div>

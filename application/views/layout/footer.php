@@ -25,10 +25,10 @@
             <div class="col-md-3 footer-grid">
                 <h4>Information</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">Our Clients</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Catalogue</a></li>
+                    <li><a href="<?php echo site_url('Shop/aboutus'); ?>">About Us </a></li>
+                    <li><a href="<?php echo site_url('Shop/contactus'); ?>">Contact Us</a></li>
 
                 </ul>
             </div>

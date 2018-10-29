@@ -662,3 +662,13 @@ a.button1 {
 .testimonials p{
     color: white;
 }
+
+
+.aboutpage{
+    background: #fff;
+}
+
+.aboutpage p{
+    margin-bottom: 20px;
+    
+}
