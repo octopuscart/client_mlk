@@ -17,10 +17,10 @@
             <div class="col-md-3 footer-grid">
                 <h4>Shop Now</h4>
                 <ul>
-                    <li><a href="#">Suit</a></li>
-                    <li><a href="#">Shirt</a></li>
-                    <li><a href="#"> Jacket </a></li>
-                    <li><a href="#"> Pant </a></li>
+                    <li><a href="#">Suits</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#"> Jackets </a></li>
+                    <li><a href="#"> Pants </a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">

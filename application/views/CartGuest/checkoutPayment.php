@@ -105,7 +105,7 @@ $this->load->view('layout/header');
                                 <i class="ion-bag fa-stack-1x "></i>
                             </span>  Payment Method
                             <span class="process_block">
-                                PayPal
+                                 PayPal
                             </span> 
                         </h4>
                     </div>
@@ -117,8 +117,8 @@ $this->load->view('layout/header');
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12">
                                             <ul class="nav nav-tabs bg_blue3 tab_measurement" >
-                                                <!--<li class="active"><a href="#paypal" data-toggle="tab" aria-expanded="false">PayPal</a></li>-->
-                                                <li class="active"><a href="#bank" data-toggle="tab" aria-expanded="true">Bank Transfer</a></li>
+                                                <li class="active"><a href="#paypal" data-toggle="tab" aria-expanded="false">PayPal</a></li>
+                                                <li><a href="#bank" data-toggle="tab" aria-expanded="true">Bank Transfer</a></li>
                                                 <li><a href="#cash" data-toggle="tab" aria-expanded="false">Cash On Delivery</a></li>
                                                 <li><a href="#cheque" data-toggle="tab" aria-expanded="false">Cheque On Delivery</a></li>
                                             </ul>
@@ -138,9 +138,9 @@ $this->load->view('layout/header');
                                                                             <a href=" <?php echo site_url("CartGuest/checkoutShipping"); ?>" class="btn-apply-coupon btn btn-info btn-lg checkout_button_pre " ><i class="fa fa-arrow-left"></i> View Shipping Address</a>
                                                                         </div>
                                                                         <div class="proceed-button pull-right ">
-                                                                            <a href="#" class="btn-apply-coupon btn btn-info btn-lg checkout_button_next " >Place Order <i class="fa fa-arrow-right"></i></a>
+                                                                            <!--<a href="#" class="btn-apply-coupon btn btn-info btn-lg checkout_button_next " >Place Order <i class="fa fa-arrow-right"></i></a>-->
 
-                                                                            <!--<a href=" <?php echo site_url("PayPalPaymentGuest/process"); ?>" class="btn-apply-coupon btn btn-info btn-lg checkout_button_next " >Place Order <i class="fa fa-arrow-right"></i></a>-->
+                                                                            <a href=" <?php echo site_url("PayPalPaymentGuest/process"); ?>" class="btn-apply-coupon btn btn-info btn-lg checkout_button_next " >Place Order <i class="fa fa-arrow-right"></i></a>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
