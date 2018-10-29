@@ -558,10 +558,10 @@ a.button1 {
 
 /*Testimonials*/
 .testimonials h2 {
-	color: #333;
+	color: #fff;
 	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
+	text-transform: capitalize;
+	/*font-family: "Roboto", sans-serif;*/
 	font-weight: bold;
 	position: relative;
 	margin: 25px 0 50px;
@@ -612,9 +612,9 @@ a.button1 {
 	padding-bottom: 5px;
 }
 .testimonials .carousel .overview b {
-	color: #333;
+	color: #fff;
 	font-size: 15px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	display: block;	
 	padding-bottom: 5px;
 }
@@ -654,7 +654,11 @@ a.button1 {
 	background: #e2e2e2;
 	border-color: transparent;
 }
- .testimonials .carousel-indicators li.active {
+ .testimonials.carousel-indicators li.active {
 	border: none;
 	background: #888;		
+}
+
+.testimonials p{
+    color: white;
 }
