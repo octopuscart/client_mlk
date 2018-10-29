@@ -5,10 +5,9 @@
             <div class="col-md-3 footer-grid">
                 <h4>About </h4>
                 <p>
-                    Hong Kong has a worldwide reputation as being a centre of world-class tailoring. Perfect Fashion is one of the leading tailoring companies in Hong Kong, and our fashion consultants will assist you in choosing your style.
-                </p>
+                NEW SUPER FIT Fashions is a multi-award winning tailor based in Hong Kong for over 48 years ago with a customer base that stretches throughout the world. NEW SUPER FIT Fashions always achieves the highest possible standard of personal tailoring ensuring total customer satisfaction. </p>
                 <div class="social-icon">
-                    <a href="https://www.facebook.com/Johns-Perfect-Fashion-1886520941596824/"><i class="icon"></i></a>
+                    <a href="#"><i class="icon"></i></a>
                     <a href="#"><i class="icon1"></i></a>
                     <a href="#"><i class="icon2"></i></a>
                     <!--<a href="#"><i class="icon3"></i></a>-->
@@ -36,9 +35,9 @@
             <div class="col-md-3 footer-grid foot">
                 <h4>Contacts</h4>
                 <ul>
-                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/cPnGNhfK69m">Shop# 13, G/F, Wing Lee Building,<br/> 27-33 Kimberley Rd, Tsim Sha Tsui,<br/> Hong Kong</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">+(852) 6626 4429</a></li>
-                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> john@perfectfashion.com.hk</a></li>
+                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="https://goo.gl/maps/4VmK6AwoyrD2">Shop 28A, G/F, <br/>Tsim Sha Tsui Mansion,<br/> No.83-97 Nathan Road, Tsim Sha Tsui,<br/> Hong Kong</a></li>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">+(852) 2366 6681 </a></li>
+                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:<?php echo email_bcc;?>"> <?php echo email_bcc;?></a></li>
 
                 </ul>
             </div>
@@ -52,7 +51,7 @@
 <div class="copy-section">
     <div class="container">
         <div class="copy-left">
-            <p>&copy; <?php echo date('Y') ?> <a href="http://www.johnsperfectfashion.com/">John's Perfect Fashion</a>. All rights reserved </p>
+            <p>Copyright &copy; <?php echo date('Y') ?> <a href="<?php echo site_url();?>"><?php echo sitename;?></a>. All rights reserved </p>
         </div>
         <div class="copy-right">
             <img src="images/card.png" alt=""/>

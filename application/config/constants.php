@@ -27,6 +27,13 @@ define('site_mail_logo', $configuration['site_logo']);
 define('custome_image_server', $configuration['product_images_url']);
 
 
+
+define('sitename', $configuration['site_name']);
+define('site_logo', $configuration['site_logo']);
+define('siteurl', $configuration['site_url']);
+
+
+
 //Email Settings//
 define('email_sender', $configuration['email_sender']);
 define('email_sender_name', $configuration['email_sender_name']);

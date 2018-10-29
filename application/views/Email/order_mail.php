@@ -74,7 +74,7 @@
           background: white;;
           font-family: sans-serif;">
         <div class="" style="padding:50px 0px;">
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="background: #1565c0;padding: 0 20px">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="background: #4169e1;padding: 0 20px">
                 <tr>
                     <td >
                         <center><img src="<?php echo site_mail_logo; ?> " style="margin: 10px;
@@ -256,7 +256,7 @@
                 </tr>
 
 
-                <tr style="background: #1565c0;
+                <tr style="background: #642020;
                     color: #fff;">
                     <td colspan="6" style="font-size: 12px;">
 
