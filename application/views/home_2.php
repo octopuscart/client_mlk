@@ -146,7 +146,7 @@ $this->load->view('layout/header');
                                 <h6><a href=""><?php echo $value['title']; ?> </a></h6>
                                 <span class="size"><?php echo $value['short_description']; ?> </span>
                                 <p ><em class="item_price">{{<?php echo $shirtcustome->price; ?>|currency:"<?php echo globle_currency; ?> "}}</em></p>
-                                <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+                                <a href="<?php echo site_url("Product/customizationRedirect/" . $shirtcustome->id) ?>/<?php echo $value['id']; ?>" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@ $this->load->view('layout/header');
                                                 <h6><a href=""><?php echo $value['title']; ?> </a></h6>
                                                 <span class="size"><?php echo $value['short_description']; ?> </span>
                                                 <p ><em class="item_price">{{<?php echo $suitcustome->price; ?>|currency:"<?php echo globle_currency; ?> "}}</em></p>
-                                                <a href="#" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
+                                                <a href="<?php echo site_url("Product/customizationRedirect/" . $suitcustome->id) ?>/<?php echo $value['id']; ?>" data-text="Add To Cart" class="my-cart-b item_add">Add To Cart</a>
                                             </div>
                                         </div>
                                     </div>
