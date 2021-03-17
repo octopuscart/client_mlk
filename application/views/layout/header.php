@@ -153,18 +153,18 @@
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Now<b class="caret"></b></a>
                                                 <ul class="dropdown-menu   singlemenu">
-                                                    <li><a href="#">Shirts</a></li>
-                                                    <li><a href="#">Suits</a></li>
-                                                    <li><a href="#">Jackets</a></li>
-                                                    <li><a href="#">Pants</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/1/0') ?>">Shirts</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/2/0') ?>">Suits</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/4/0') ?>">Jackets</a></li>
+                                                    <li><a href="<?php echo site_url('Product/ProductList/3/0') ?>">Pants</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#" >Catalogue</a>
                                                
                                             </li>
-                                            <li><a href="#">About Us </a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="<?php echo site_url('Shop/aboutus'); ?>">About Us </a></li>
+                                            <li><a href="<?php echo site_url('Shop/contactus'); ?>">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -172,7 +172,7 @@
 
                             <div class="header-right2">
                                 <div class="cart box_1" style="    margin-top: 10px;">
-                                    <a href="#">
+                                    <a href="<?php echo site_url("Cart/details"); ?>">
                                         <h3> <div class="total">
                                                 <span class="simpleCart_total1">{{globleCartData.total_price|currency:"<?php echo globle_currency;?> "}}</span> (<span  class="simpleCart_quantity1">{{globleCartData.total_quantity}}</span> items)</div>
                                             <img src="<?php echo base_url(); ?>assets/theme/images/bag.png" alt="" />
