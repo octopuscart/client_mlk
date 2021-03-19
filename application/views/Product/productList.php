@@ -96,7 +96,7 @@ foreach ($categorie_parent as $key => $value) {
                                     <figure>		
                                         <a href="#" class="new-gri" data-toggle="modal1" data-target="#myModal2">
                                             <div class="grid-img">
-                                                <div class="product_image_back" style="background: url(<?php echo custome_image_server . "/coman/output/"; ?>{{product.folder}}/cutting20001.png)"></div>
+                                                <div class="product_image_back" style="background: url(<?php echo base_url(); ?>assets/products/{{product.folder}})"></div>
                                             </div>
 
                                         </a>		

@@ -93,96 +93,35 @@ class Shop extends CI_Controller {
         $this->load->view('Pages/clients');
     }
 
+    function updateFabricsSuit() {
+        $fabriclist = ['RF10018.jpg', 'RF10032.jpg', 'RF10033.jpg', 'RF10034.jpg', 'RF10035.jpg', 'RF10042.jpg', 'RF10043.jpg', 'RF10044.jpg', 'RF10045.jpg', 'RF10047.jpg', 'RF10050.jpg', 'RF10056.jpg', 'RF10057.jpg', 'RF10058.jpg', 'RF10060.jpg', 'RF10061.jpg', 'RF10068.jpg', 'RF10069.jpg', 'RF10071.jpg', 'RF10082.jpg', 'RF10085.jpg', 'RF10086.jpg', 'RF10104.jpg', 'RF10106.jpg', 'RF10108.jpg', 'RF10109.jpg', 'RF10110.jpg', 'RF10163.jpg', 'RF10215.jpg', 'RF10217.jpg', 'RF10218.jpg', 'RF10219.jpg', 'RF10220.jpg', 'RF10221.jpg', 'RF10222.jpg', 'RF10224.jpg', 'RF10225.jpg', 'RF10227.jpg', 'RF10229.jpg', 'RF10230.jpg', 'RF10231.jpg', 'RF10232.jpg', 'RF10234.jpg', 'RF10235.jpg', 'RF10238.jpg', 'RF10239.jpg', 'RF10240.jpg', 'RF10241.jpg', 'RF10243.jpg', 'RF10244.jpg'];
 
-
-    public function testinsert() {
-        $foldersstrip = ['HL_41007_72.jpg', 'HL_41009_72.jpg', 'HL_41043_72.jpg', 'HL_41044_72.jpg', 'HL_41045_72.jpg', 'HL_41094_72.jpg', 'HL_51045_64.jpg', 'HL_51047_64.jpg', 'HL_51048_64.jpg', 'HL_51077_64.jpg', 'HL_51082_64.jpg', 'HL_51143_64.jpg', 'HL_51145_64.jpg', 'HL_51146_64.jpg', 'HL_51147_64.jpg', 'HL_51148_64.jpg', 'HL_51156_64.jpg', 'HL_51157_64.jpg', 'HL_51158_64.jpg', 'HL_71005_56.jpg', 'HL_71007_56.jpg', 'HL_71008_56.jpg', 'HL_71009_56.jpg', 'HL_71010_56.jpg', 'HL_71058_56.jpg', 'HL_71059_56.jpg', 'HL_71087_56.jpg', 'HL_71088_56.jpg', 'HL_71093_56.jpg', 'HL_71094_56.jpg', 'HL_71098_56.jpg', 'HL_71099_56.jpg', 'HL_71122_56.jpg', 'HL_71124_56.jpg', 'HL_71126_56.jpg', 'HL_71241_56.jpg', 'HL_71242_56.jpg', 'HL_71299_56.jpg', 'HL_71300_56.jpg', 'HL_71301_56.jpg', 'HL_71303_56.jpg'];
-        $foldercheck = ['HL_42002_72.jpg', 'HL_42004_72.jpg', 'HL_42004_72.png', 'HL_42009_72.jpg', 'HL_42023_72.jpg', 'HL_42031_72.jpg', 'HL_42032_72.jpg', 'HL_42033_72.jpg', 'HL_42034_72.jpg', 'HL_42035_72.jpg', 'HL_42036_72.jpg', 'HL_42037_72.jpg', 'HL_42038_72.jpg', 'HL_42039_72.jpg', 'HL_42040_56.jpg', 'HL_42040_72.jpg', 'HL_42041_72.jpg', 'HL_42042_72.jpg', 'HL_42067_72.jpg', 'HL_42068_72.jpg', 'HL_42069_72.jpg', 'HL_42071_72.jpg', 'HL_72104_56.jpg', 'HL_72107_56.jpg', 'HL_72108_56.jpg', 'HL_72119_56.jpg', 'HL_72120_56.jpg', 'HL_72121_56.jpg', 'HL_72124_56.jpg', 'HL_72197_56.jpg', 'HL_72198_56.jpg', 'HL_72199_56.jpg', 'HL_72200_56.jpg', 'HL_72211_56.jpg', 'HL_72214_56.jpg', 'HL_72215_56.jpg', 'HL_72217_56.jpg', 'HL_72219_56.jpg', 'HL_72221_56.jpg', 'HL_72222_56.jpg', 'HL_72275_56.jpg', 'HL_72276_56.jpg', 'HL_72277_56.jpg', 'HL_72281_56.jpg', 'HL_72282_56.jpg'];
-        $foldersolid = ['HL5600164.jpg', 'HL5601064.jpg', 'HL5601264.jpg', 'HL5601764.jpg', 'HL5601864.jpg', 'HL5602064.jpg', 'HL5602164.jpg', 'HL5602464.jpg', 'HL5602564.jpg', 'HL5602664.jpg', 'HL5603264.jpg', 'HL5603464.jpg', 'HL5603564.jpg', 'HL5702564.jpg', 'HL5702664.jpg'];
-        $foldertexture = ['HL5400364.jpg', 'HL5400764.jpg', 'HL5402564.jpg', 'HL5402964.jpg', 'HL5405664.jpg', 'HL5406264.jpg', 'HL5406364.jpg', 'HL5407964.jpg', 'HL5408164.jpg', 'HL5414564.jpg'];
-
-
-        foreach ($foldertexture as $key => $value) {
-            $folder = $value;
-            $foldermain = str_replace(".jpg", "", $folder);
-            $titles = explode("_", $folder);
-
-
-            $title = "BT" . $titles[1];
-
-            $products = array(
-                "category_id" => 48,
-                "sku" => $title,
-                "title" => $title,
-                "short_description" => "2 Ply 100% Cotton",
-                "description" => "2 Ply 100% Cotton",
-                "video_link" => "",
-                "regular_price" => "95",
-                "sale_price" => "0",
-                "credit_limit" => "",
-                "price" => "95",
-                "file_name" => $foldermain . "shirt_model20001.png",
-                "file_name1" => $foldermain . "shirt_model10001.png",
-                "file_name2" => $foldermain . "fabricx0001.png",
-                "file_name3" => "",
-                "user_id" => "10",
-                "op_date_time" => "",
-                "status" => "1",
-                "home_slider" => "",
-                "home_bottom" => "",
-                "keywords" => "",
-                "stock_status" => "In Stock",
-                "variant_product_of" => "",
-                "folder" => $foldermain);
-            $this->db->insert('products', $products);
+        $this->db->where("category_id", 43);
+        $query = $this->db->get("products");
+        $products = $query->result_array();
+        foreach ($products as $key => $value) {
+            echo $value["folder"];
+            echo $fabriclist[$key];
+            echo "<br/>";
+            $this->db->where("folder", $value["folder"]);
+            $this->db->set(array("folder" => $fabriclist[$key]));
+            $this->db->update("products");
         }
     }
-
-    public function testinsertsuit() {
-        $foldercheck = ['12501.jpg', '12502.jpg', '12503.jpg', '12504.jpg', '12508.jpg', '12509.jpg', '12510.jpg', '12511.jpg', '12512.jpg', '12514.jpg', '12601.jpg', '12602.jpg', '9775.jpg', '9776.jpg', '9777.jpg', '9778.jpg', '9779.jpg', '9780.jpg'];
-        $folderchek2 = ['12512.jpg', '12514.jpg', '12601.jpg', '12602.jpg', '12603.jpg', '12604.jpg', '12605.jpg', '12606.jpg', '12611.jpg', '12612.jpg', '12613.jpg', '12615.jpg', '12616.jpg', '12617.jpg', '12618.jpg', '12619.jpg', '12649.jpg', '12650.jpg', '12651.jpg', '12652.jpg', '12653.jpg', '12654.jpg', '12655.jpg', '12656.jpg'];
-       
-        $folderstrip = ['12546.jpg', '12548.jpg', '12549.jpg', '12550.jpg', '12551.jpg', '12552.jpg', '12553.jpg', '12554.jpg', '12562.jpg', '9733.jpg', '9734.jpg', '9735.jpg', '9736.jpg', '9737.jpg', '9744.jpg', '9749.jpg', '9750.jpg', '9751.jpg'];
-        foreach ($folderstrip as $key => $value) {
-            $folder = $value;
-            $foldermain = str_replace(".jpg", "", $folder);
-
-            if (strpos($folder, '_')) {
-                $titles = explode("_", $foldermain);
-                $title = "BT" . $titles[1];
-            } else {
-                $title = "BT" . $foldermain;
-            }
-
-
-
-
-            $products = array(
-                "category_id" => 50,
-                "sku" => $title,
-                "title" => $title,
-                "short_description" => "100% Cotton",
-                "description" => "100% Cotton",
-                "video_link" => "",
-                "regular_price" => "800",
-                "sale_price" => "0",
-                "credit_limit" => "",
-                "price" => "800",
-                "file_name" => $foldermain . "s1_master_style60001.png",
-                "file_name1" => $foldermain . "style_buttons.png",
-                "file_name2" => $foldermain . "fabricx0001.png",
-                "file_name3" => "",
-                "user_id" => "10",
-                "op_date_time" => "",
-                "status" => "1",
-                "home_slider" => "",
-                "home_bottom" => "",
-                "keywords" => "",
-                "stock_status" => "In Stock",
-                "variant_product_of" => "",
-                "folder" => $foldermain);
-
-            $this->db->insert('products', $products);
+    
+    function updateFabricsShirt() {
+        $fabriclist = ['RK07.jpg', 'RK38.jpg', 'RK39.jpg', 'RK40.jpg', 'RK41.jpg', 'RK42.jpg', 'RK43.jpg', 'RK44.jpg', 'RK45.jpg', 'RK46.jpg', 'RK47.jpg', 'RK48.jpg', 'RK49.jpg', 'RK50.jpg', 'RK51.jpg', 'RK52.jpg', 'RK53.jpg', 'RK54.jpg', 'RK55.jpg', 'RK56.jpg', 'RK57.jpg', 'RK58.jpg', 'RK59.jpg', 'RK60.jpg', 'RK61.jpg', 'RK63.jpg', 'RK64.jpg', 'RK67.jpg', 'RK68.jpg', 'RK69.jpg', 'RK70.jpg', 'RK71.jpg', 'RK72.jpg', 'RK73.jpg', 'RK74.jpg', 'RK75.jpg', 'RK76.jpg', 'RK77.jpg', 'RK78.jpg', 'RK79.jpg', 'RK80.jpg', 'RK81.jpg', 'RK82.jpg', 'RK83.jpg', 'RK84.jpg', 'RK85.jpg', 'RK86.jpg'];
+        
+        $this->db->where("category_id", 42);
+        $query = $this->db->get("products");
+        $products = $query->result_array();
+        foreach ($products as $key => $value) {
+            echo $value["folder"];
+            echo $fabriclist[$key];
+            echo "<br/>";
+            $this->db->where("folder", $value["folder"]);
+            $this->db->set(array("folder" => $fabriclist[$key]));
+            $this->db->update("products");
         }
     }
 
